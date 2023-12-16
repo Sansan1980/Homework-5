@@ -9,7 +9,7 @@ public class Main {
 Для Android — «Установите версию приложения для Android по ссылке».
 Объявите переменную clientOS, которая равна 0 или 1 (0 — iOS, 1 — Android).
 
-         */
+       */
         System.out.println(" Задача № 1");
 
         int clientOS = 1;
@@ -18,10 +18,6 @@ public class Main {
         }else if (clientOS == 1){
             System.out.println( "Установите версию приложения для Android по ссылке");
         }
-
-
-
-
 
 
 
