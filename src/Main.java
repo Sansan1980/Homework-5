@@ -119,34 +119,49 @@ public class Main {
          */
 
         System.out.println(" Задача №5");
-        int monthNumber =6;
-        switch (monthNumber){
-            case 12,1,2:
+        int monthNumber = 6;
+        switch (monthNumber) {
+            case 12, 1, 2:
                 System.out.println("Зима");
                 break;
-            case 3,4,5:
+            case 3, 4, 5:
                 System.out.println("весна");
                 break;
-            case 6,7,8:
+            case 6, 7, 8:
                 System.out.println("Лето");
                 break;
-            case 9,10,11:
+            case 9, 10, 11:
                 System.out.println("Осень");
                 break;
-            default :
+            default:
                 System.out.println("неверный номер");
         }
 
-
-
-
-
-        // решение задачи №3 на видеолекции
-
-
-
-
-
+        System.out.println(" Задача  №2");
+        // решение задачи №2 из видеолекции
+        /*
+        Задача 2
+Усложним предыдущую задачу. Теперь нам нужно знать не только операционную систему телефона, но и год его создания.
+Ваша задача — написать программу, которая выдает соответствующее сообщение клиенту при наличии двух условий.
+Если год выпуска ранее 2015 года, то к сообщению об установке нужно добавить информацию об облегченной версии:
+Для iOS оно будет звучать так: «Установите облегченную версию приложения для iOS по ссылке».
+Для Android: «Установите облегченную версию приложения для Android по ссылке».
+Для пользователей телефонов 2015 года выпуска и позже нужно вывести обычное предложение об установке приложения.
+Для года создания телефона используйте переменную clientDeviceYear, в которой необходимо указать 2015 год.
+Важно: вложенность больше двух этажей не допускается (условный оператор внутри условного оператора).
+         */
+         clientOS = 0;
+        clientDeviceYear = 2016;
+        int limitYearRelease = 2015;
+        if (clientOS == 0 && clientDeviceYear >= limitYearRelease) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientOS == 0 && clientDeviceYear <= limitYearRelease) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (clientOS == 1 && clientDeviceYear >= limitYearRelease) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }
 
 
     }
