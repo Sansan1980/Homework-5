@@ -93,22 +93,76 @@ public class Main {
         System.out.println(" Задача №4");
         int deliveryDistance = 120;
 
-        if (deliveryDistance <= 20 ) {
+        if (deliveryDistance <= 20) {
             int time = 1;
             System.out.println(" Потребуется дней:" + time);
         }
-        if (deliveryDistance >= 20 && deliveryDistance <= 60){
+        if (deliveryDistance >= 20 && deliveryDistance <= 60) {
             int time = 2;
-            System.out.println(" Потребуется дней:" + time );
+            System.out.println(" Потребуется дней:" + time);
         }
-        if (deliveryDistance >=60 && deliveryDistance < 100 ){
+        if (deliveryDistance >= 60 && deliveryDistance < 100) {
             int time = 3;
-            System.out.println(" Потребуется дней:" + time );
+            System.out.println(" Потребуется дней:" + time);
         }
-        if (deliveryDistance >= 100){
-           String time = " Нет доставки !!!";
-            System.out.println(" Потребуется дней:" + time );
+        if (deliveryDistance >= 100) {
+            String time = " Нет доставки !!!";
+            System.out.println(" Потребуется дней:" + time);
         }
+         /*
+        Задача 5
+Напишите программу, которая определяет по номеру месяца в году, к какому сезону этот месяц принадлежит.
+Например, 1-й месяц (он же январь) принадлежит к сезону зима.
+Для написания программы используйте оператор switch. Для обозначения номера месяца используйте переменную monthNumber = 12.
+Пропишите условие, при котором программа не будет выполняться (номер месяца больше 12).
+         */
+
+        System.out.println(" Задача №5");
+        int monthNumber =30;
+        switch (monthNumber){
+            case 12:
+                System.out.println("Зима");
+                break;
+            case 1:
+                System.out.println("Зима");
+                break;
+            case 2:
+                System.out.println("Зима");
+                break;
+            case 3:
+                System.out.println("весна");
+                break;
+            case 4:
+                System.out.println("весна");
+                break;
+            case 5:
+                System.out.println("весна");
+                break;
+            case 6:
+                System.out.println("Лето");
+                break;
+            case 7:
+                System.out.println("Лето");
+                break;
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+                System.out.println("Осень");
+                break;
+            case 10:
+                System.out.println("Осень");
+                break;
+            case 11:
+                System.out.println("осень");
+                break;
+            default :
+                System.out.println("неверный номер");
+        }
+
+
+    }
+}
 
 
 
