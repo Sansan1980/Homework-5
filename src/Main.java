@@ -77,13 +77,60 @@ public class Main {
             System.out.println(" год " + year + " неявляется високосным ! ");
         }
 
+         /*
+    Задача 4
+В банке для клиентов организовывается доставка карт на дом. Чтобы известить клиента о том, когда будет доставлена его карта,
+нужно знать расстояние от офиса до адреса доставки.
+Правила доставки такие:
+Доставка в пределах 20 км занимает сутки.
+Доставка в пределах от 20 км до 60 км добавляет еще один день доставки.
+Доставка в пределах 60 км до 100 км добавляет еще одни сутки.
+Свыше 100 км доставки нет.
+То есть с каждым следующим интервалом доставки срок увеличивается на 1 день.
+Напишите программу, которая выдает сообщение в консоль: "Потребуется дней: " + срок доставки.
+Объявите целочисленную переменную  = 95, которая содержит дистанцию до клиента.
+     */
+        System.out.println(" Задача №4");
+        int deliveryDistance = 120;
+
+        if (deliveryDistance <= 20 ) {
+            int time = 1;
+            System.out.println(" Потребуется дней:" + time);
+        }
+        if (deliveryDistance >= 20 && deliveryDistance <= 60){
+            int time = 2;
+            System.out.println(" Потребуется дней:" + time );
+        }
+        if (deliveryDistance >=60 && deliveryDistance < 100 ){
+            int time = 3;
+            System.out.println(" Потребуется дней:" + time );
+        }
+        if (deliveryDistance >= 100){
+           String time = " Нет доставки !!!";
+            System.out.println(" Потребуется дней:" + time );
+        }
+
+
+       //boolean nearLimit = (deliveryDistance <= 20);
+       // boolean averageLimit = (deliveryDistance >= 20 && deliveryDistance<= 60);
+     //  boolean farLimit = (deliveryDistance >= 100);
+
+      //  switch (deliveryDistance) {
+      //      case (nearLimit) :
+         //       System.out.println(" Потребуется дней:  time");
+        }
+
+
+          //int time = 1;
+         //   System.out.println(" Потребуется дней: " + time);
+        }
 
 
 
 
 
-    }
-}
+
+
 
 
 
