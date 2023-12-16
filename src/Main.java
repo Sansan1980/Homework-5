@@ -93,6 +93,10 @@ public class Main {
         System.out.println(" Задача №4");
         int deliveryDistance = 120;
 
+        if (deliveryDistance > 100) {
+            String time = " Нет доставки !!!";
+        }
+
         if (deliveryDistance <= 20) {
             int time = 1;
             System.out.println(" Потребуется дней:" + time);
@@ -105,10 +109,7 @@ public class Main {
             int time = 3;
             System.out.println(" Потребуется дней:" + time);
         }
-        if (deliveryDistance >= 100) {
-            String time = " Нет доставки !!!";
-            System.out.println(" Потребуется дней:" + time);
-        }
+
          /*
         Задача 5
 Напишите программу, которая определяет по номеру месяца в году, к какому сезону этот месяц принадлежит.
@@ -118,7 +119,7 @@ public class Main {
          */
 
         System.out.println(" Задача №5");
-        int monthNumber =30;
+        int monthNumber =6;
         switch (monthNumber){
             case 12,1,2:
                 System.out.println("Зима");
@@ -135,6 +136,17 @@ public class Main {
             default :
                 System.out.println("неверный номер");
         }
+
+
+
+
+
+        // решение задачи №3 на видеолекции
+
+
+
+
+
 
 
     }
