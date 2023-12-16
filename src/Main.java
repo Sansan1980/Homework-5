@@ -120,41 +120,17 @@ public class Main {
         System.out.println(" Задача №5");
         int monthNumber =30;
         switch (monthNumber){
-            case 12:
+            case 12,1,2:
                 System.out.println("Зима");
                 break;
-            case 1:
-                System.out.println("Зима");
-                break;
-            case 2:
-                System.out.println("Зима");
-                break;
-            case 3:
+            case 3,4,5:
                 System.out.println("весна");
                 break;
-            case 4:
-                System.out.println("весна");
-                break;
-            case 5:
-                System.out.println("весна");
-                break;
-            case 6:
+            case 6,7,8:
                 System.out.println("Лето");
                 break;
-            case 7:
-                System.out.println("Лето");
-                break;
-            case 8:
-                System.out.println("Лето");
-                break;
-            case 9:
+            case 9,10,11:
                 System.out.println("Осень");
-                break;
-            case 10:
-                System.out.println("Осень");
-                break;
-            case 11:
-                System.out.println("осень");
                 break;
             default :
                 System.out.println("неверный номер");
