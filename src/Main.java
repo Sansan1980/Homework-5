@@ -35,7 +35,7 @@ public class Main {
          */
         System.out.println(" Задача № 2");
 
-        clientOS =1;
+        clientOS = 1;
         int clientDeviceYear = 2015;
         if (clientDeviceYear >= 2015) {
             switch (clientOS) {
@@ -57,7 +57,7 @@ public class Main {
             }
         }
 
-        System.out.println(" Задача № 2");
+        System.out.println(" Задача № 3");
         /*
         Задача 3
 Напишите программу, которая определяет, является ли год високосным или нет.
@@ -67,18 +67,22 @@ public class Main {
 Небольшая справка: високосным является каждый четвертый год, но не является каждый сотый.
 Также високосным является каждый четырехсотый год. Год должен быть больше, чем 1584 (в котором был введен високосный год).
          */
-         int year = 2021
-         int x = 1584;
-         int a = 4;
-         int c = 400;
-         int b = 100;
+        int year = 2000;
+        int limitYear = 1584;
 
 
-
-         // « …. год является високосным» или
-        // «... год не является високосным».
-
+        if (year >= 1584 && year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println("год " + year + " является високосным !");
+        } else {
+            System.out.println(" год " + year + " неявляется високосным ! ");
         }
+
+
+
+
+
+
+    }
 }
 
 
