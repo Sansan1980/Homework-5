@@ -111,19 +111,6 @@ public class Main {
         }
 
 
-       //boolean nearLimit = (deliveryDistance <= 20);
-       // boolean averageLimit = (deliveryDistance >= 20 && deliveryDistance<= 60);
-     //  boolean farLimit = (deliveryDistance >= 100);
-
-      //  switch (deliveryDistance) {
-      //      case (nearLimit) :
-         //       System.out.println(" Потребуется дней:  time");
-        }
-
-
-          //int time = 1;
-         //   System.out.println(" Потребуется дней: " + time);
-        }
 
 
 
